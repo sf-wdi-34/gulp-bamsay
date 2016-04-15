@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ga-wdi-exercises/gulp-bamsay/issues"
   },
-  "homepage": "https://github.com/ga-wdi-exercises/gulp-bamsay#readme"
+  "homepage": "https://github.com/ga-wdi-exercises/gulp-bamsay#readme",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
 }
