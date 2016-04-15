@@ -7,13 +7,13 @@
 6 info start bamsay@1.0.0
 7 verbose unsafe-perm in lifecycle true
 8 info bamsay@1.0.0 Failed to exec start script
-9 error bamsay@1.0.0 start: `webpack-dev-server --content-base build`
+9 error bamsay@1.0.0 start: `webpack-dev-server`
 9 error Exit status 8
 10 error Failed at the bamsay@1.0.0 start script.
 10 error This is most likely a problem with the bamsay package,
 10 error not with npm itself.
 10 error Tell the author that this fails on your system:
-10 error     webpack-dev-server --content-base build
+10 error     webpack-dev-server
 10 error You can get their info via:
 10 error     npm owner ls bamsay
 10 error There is likely additional logging output above.
