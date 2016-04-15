@@ -1,15 +1,15 @@
-const path = require('path');
+var path = require('path');
 
-const merge = require('webpack-merge');
-const webpack = require('webpack');
-const TARGET = process.env.npm_lifecycle_event;
+var merge = require('webpack-merge');
+var webpack = require('webpack');
+var TARGET = process.env.npm_lifecycle_event;
 
-const PATHS = {
+var PATHS = {
   js: path.join(__dirname, 'js'),
   build: path.join(__dirname, 'build')
 };
 
-const common = {
+var common = {
 
   // Entry accepts a path or an object of entries. We'll be using the
   // latter form given it's convenient with more complex configurations.
