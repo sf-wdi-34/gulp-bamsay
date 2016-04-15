@@ -1,12 +1,13 @@
 var path = require('path');
-
+var Promise = require('es6-promise').Promise;
 var merge = require('webpack-merge');
 var webpack = require('webpack');
 var TARGET = process.env.npm_lifecycle_event;
 
 var PATHS = {
   js: path.join(__dirname, 'js'),
-  build: path.join(__dirname, 'build')
+  build: path.join(__dirname, 'build'),
+  css: path.join(__dirname, 'css')
 };
 
 var common = {
@@ -14,11 +15,23 @@ var common = {
   // Entry accepts a path or an object of entries. We'll be using the
   // latter form given it's convenient with more complex configurations.
   entry: {
-    app: PATHS.js
+    app: PATHS.js,
+    css: PATHS.css
   },
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        // Test expects a RegExp! Note the slashes!
+        test: /\.css$/,
+        loaders: ['style', 'css'],
+        // Include accepts either a path or an array of paths.
+        include: PATHS.css
+      }
+    ]
   }
 };
 

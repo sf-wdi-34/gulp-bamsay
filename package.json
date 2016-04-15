@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/ga-wdi-exercises/gulp-bamsay#readme",
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "es6-promise": "^3.1.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.10.0"
