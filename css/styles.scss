@@ -1,5 +1,6 @@
 $colorText: #CF458B;
 $colorShadow: #fefefe;
+$borderColor: red;
 
 body{
   background:#CF458B;
@@ -21,6 +22,7 @@ body{
 h1{
   text-align: center;
   color: $colorText;
+  border: 3px solid $borderColor;
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
   font-weight: 100;
