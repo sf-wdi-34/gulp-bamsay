@@ -24,8 +24,14 @@ gulp.task('sass', function () {
   .pipe(connect.reload());
 });
 
+gulp.task('html', function(){
+  return gulp.src('./*.html')
+  .pipe(connect.reload());
+});
+
 gulp.task('watch', function () {
   gulp.watch('./css/**/*.scss', ['sass']);
+  gulp.watch('./*.html', ['html']);
 });
 
 gulp.task('connect', function() {
@@ -34,4 +40,4 @@ gulp.task('connect', function() {
   })
 });
 
-gulp.task('default', ['sass', 'connect', 'watch']);
+gulp.task('default', ['html', 'sass', 'connect', 'watch'])
