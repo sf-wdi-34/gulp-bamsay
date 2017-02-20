@@ -4,5 +4,5 @@ We are going to be using this repo as an example to implement Gulp plugins for J
 
 Instructions:
 
-1. Fork and Clone Repo
+1. Fork and clone repo
 2. `npm install`
